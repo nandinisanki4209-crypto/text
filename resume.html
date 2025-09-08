@@ -1,0 +1,89 @@
+
+
+✅ Simple Resume in HTML (with basic styling)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color:aqua;
+    }
+    h1, h2 {
+      color: blueviolet;
+    }
+    .section {
+      margin-bottom: 25px;
+    }
+    .job-title {
+      font-weight: bold;
+      color: #34495e;
+    }
+    .date {
+      float: right;
+      color: #7f8c8d;
+    }
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    hr {
+      border: 0;
+      height: 1px;
+      background: #ccc;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>John Doe</h1>
+  <p>Email: john.doe@example.com | Phone: (123) 456-7890 | LinkedIn: linkedin.com/in/johndoe</p>
+
+  <hr>
+
+  <div class="section">
+    <h2>Professional Summary</h2>
+    <p>Experienced web developer with a strong background in front-end and back-end technologies. Passionate about clean code and user-friendly design.</p>
+  </div>
+
+  <div class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>React, Vue.js</li>
+      <li>Node.js, Express</li>
+      <li>Python, Django</li>
+      <li>Git, GitHub</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Experience</h2>
+    <div class="clearfix">
+      <div class="job-title">Front-End Developer – ABC Company</div>
+      <div class="date">2021 – Present</div>
+    </div>
+    <p>Worked on responsive UI development using React and improved website speed by 35% through optimization techniques.</p>
+
+    <div class="clearfix">
+      <div class="job-title">Web Developer – XYZ Inc.</div>
+      <div class="date">2018 – 2021</div>
+    </div>
+    <p>Built dynamic web applications using JavaScript, integrated RESTful APIs, and collaborated with designers for UX improvements.</p>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <p><strong>B.Sc. in Computer Science</strong> – University of Technology, 2014 – 2018</p>
+  </div>
+
+</body>
+</html>
